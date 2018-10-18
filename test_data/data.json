@@ -1,0 +1,42 @@
+{
+	"sunny_day_test": {
+		"data": {"Type": "Test.vpn", "Data": "KJyiXJrscc"}, 
+		"result": {"Host": "tNsw", "Port": "12868", "Virtualhost": "NsGRu", "User": "ssVma", "Password": "ozFZBsbO"}
+	},
+	"sunny_day_develop": {
+		"data": {"type": "Develop.mr_robot", "data": "kjkZIvaBjM"}, 
+		"result": {"Host":"kXVb","Port":"48885","Database":"Gvbqzg","User":"exyAL","Password":"BsdjSGpn","Schema":"gCwFkDif"}
+	},
+	"without_url": {
+		"data": {"type": "Develop.mr_robot", "data": "kjkZIvaBjM"}, 
+		"result": "404 page not found"
+	},
+	"without_type": {
+		"data": {"data": "kjkZIvaBjM"}, 
+		"result": {"error": "config model not present"}
+	},
+	"without_data": {
+		"data": {"type": "Develop.mr_robot"}, 
+		"result": {"error": "record not found"}
+	},
+	"type_empty_string": {
+		"data": {"type": "", "data": "kjkZIvaBjM"}, 
+		"result": {"error": "config model not present"}
+	},
+	"data_empty_string": {
+		"data": {"type": "Develop.mr_robot", "data": ""}, 
+		"result":  {"error": "record not found"}
+	},
+	"type_not_string": {
+		"data": {"type": false, "data": ""}, 
+		"result":  {"error": "Bad input"}
+	},
+	"data_not_string": {
+		"data": {"type": "Develop.mr_robot", "data": 45}, 
+		"result": {"error": "Bad input"}
+	},
+	"with_host": {
+		"data": {"type": "Develop.mr_robot", "host": "kjkZIvaBjM"}, 
+		"result":  {"error": "record not found"}
+	}
+}
